@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" href="taskManager.css">
+
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div class="container">
+            <div class="headerInner">
+                <a class="logo" href="#">Task<span>Manager</span></a>
+                <button class="logout">Logout</button>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="container">
+            <div class="taskManager">
+                <div class="top">
+                    <h2>Task Manager</h2>
+                    <div class="topInput">
+                        <input required class="newTask" placeholder="Task" type="text">
+                        <button type="submit" class="newSubmit">submit</button>
+                    </div>
+                    <p class="topError"></p>
+                </div>
+                <div class="bottom">
+
+                </div>
+                <div class="filterButtons">
+                    <button type="button" class="allBtn filterButtons">all</button>
+                    <button type="button" class="completedBtn filterButtons">completed</button>
+                    <button type="button" class="uncompletedBtn filterButtons">uncompleted</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="footerInner">
+                <ul class="contactsFooter">
+                    <h4>Kurianov Andrei</h4>
+                    <li>
+                        <a href="mailto:Andr230998@gmail.com">
+                            <img class="mail" src="../../img/icons8-mail.svg" alt="">
+                            Andr230998@gmail.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/lllllllliiiiiiiiillllllll">
+                            <img class="telegram" src="../../img/icons8-telegram.svg" alt="">
+                            @lllllllliiiiiiiiillllllll
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="tel:+996551015495">
+                            <img class="whatsapp" src="../../img/icons8-whatsapp.svg" alt="">
+                            +996551015495
+                        </a>
+                    </li>
+
+                </ul>
+                <a class="logoFooter" href="#">Task<span>Manager</span></a>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+
+
+<script src="taskManager.js"></script>
+</html>

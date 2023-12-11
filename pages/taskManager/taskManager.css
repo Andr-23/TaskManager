@@ -1,0 +1,326 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+header {
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.logo {
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    font-weight: 700;
+}
+.logo span {
+    color: #5D95CE;
+}
+
+.headerInner {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerInner button {
+    width: 70px;
+    padding: 10px 0;
+    background-color: #5D95CE;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+.headerInner button:hover {
+    background-color: #6daae8;
+}
+
+.headerInner button:active {
+    background-color: #3f6d9b;
+    color: #c4c4c4;
+}
+
+body {
+    background: url("../../img/background.jpg") no-repeat;
+    background-size: cover;
+}
+
+.main {
+    padding: 50px 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 1260px) {
+    .container {
+        width: 800px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .container {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .container {
+        width: 320px;
+    }
+}
+
+footer {
+    background-color: #5D95CE;
+}
+
+.footerInner {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+@media only screen and (max-width: 560px) {
+    .footerInner {
+        flex-direction: column;
+        height: 250px;
+        padding-bottom: 30px;
+    }
+}
+
+.footerInner ul {
+    list-style: none;
+}
+
+.logoFooter {
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    font-weight: 700;
+}
+.logoFooter span {
+    color: #ffffff;
+}
+
+.contactsFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contactsFooter h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.contactsFooter a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.contactsFooter a:hover {
+    text-decoration: underline;
+}
+
+.contactsFooter a:active {
+    color: #e1e1e1;
+}
+
+.contactsFooter li:nth-of-type(2) {
+    position: relative;
+    left: -2px;
+}
+
+.contactsFooter li:nth-of-type(3) {
+    position: relative;
+    left: 2px;
+}
+
+.mail {
+    width: 20px;
+    height: 20px;
+}
+
+.telegram {
+    width: 24px;
+    height: 24px;
+}
+
+.whatsapp {
+    width: 18px;
+    height: 18px;
+}
+
+.taskManager {
+    border: 5px solid white;
+    border-radius: 10px;
+}
+
+.top {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.topError {
+    height: 20px;
+    margin-top: 10px;
+    color: red;
+}
+
+.topInput {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.topInput button {
+    width: 70px;
+    font-weight: 600;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.newTask {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.bottom {
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.32);
+    backdrop-filter: blur(3px);
+    overflow-y: auto;
+}
+
+@media only screen and (max-width: 860px) {
+    .bottom {
+        height: 300px;
+    }
+}
+
+.task {
+    position: relative;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.21);
+    padding: 20px;
+    z-index: 10;
+}
+
+.editText {
+    width: 100%;
+}
+
+.taskInfo {
+    display: flex;
+}
+
+.taskText {
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 860px) {
+    .taskText {
+        font-size: 16px;
+    }
+}
+
+.taskButtons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.taskButtons button {
+    width: 70px;
+    padding: 5px;
+    font-weight: 600;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.editText {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.editText button {
+    width: 70px;
+    font-weight: 600;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.newText {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+
+.filterButtons {
+    padding: 5px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.filterButtons button {
+    display: block;
+    width: 100%;
+    padding: 10px 5px;
+    background-color: #5D95CE;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+.filterButtons button:hover {
+    background-color: #6daae8;
+}
+
+.filterButtons button:active {
+    background-color: #3f6d9b;
+    color: #c4c4c4;
+}
+
+.hide {
+    display: none;
+}
