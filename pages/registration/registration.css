@@ -211,6 +211,15 @@ footer {
     cursor: pointer;
 }
 
+.submit:hover {
+    background-color: #6daae8;
+}
+
+.submit:active {
+    background-color: #3f6d9b;
+    color: #c4c4c4;
+}
+
 .error {
     color: red;
 }

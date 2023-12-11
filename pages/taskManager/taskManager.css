@@ -198,6 +198,19 @@ footer {
     border: 2px solid black;
     border-radius: 5px;
     text-transform: uppercase;
+    cursor: pointer;
+}
+
+.topInput button:hover {
+    background-color: #fff;
+    border-color: #3b3b3b;
+    color: #3b3b3b;
+}
+
+.topInput button:active {
+    background-color: #d2d2d2;
+    border-color: #000000;
+    color: #000000;
 }
 
 .newTask {
@@ -263,6 +276,19 @@ footer {
     background-color: #fff;
     border: 2px solid black;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.taskButtons button:hover {
+    background-color: #fff;
+    border-color: #3b3b3b;
+    color: #3b3b3b;
+}
+
+.taskButtons button:active {
+    background-color: #d2d2d2;
+    border-color: #000000;
+    color: #000000;
 }
 
 .editText {
@@ -279,7 +305,22 @@ footer {
     border: 2px solid black;
     border-radius: 5px;
     text-transform: uppercase;
+    cursor: pointer;
 }
+
+.editText button:hover {
+    background-color: #fff;
+    border-color: #3b3b3b;
+    color: #3b3b3b;
+}
+
+.editText button:active {
+    background-color: #d2d2d2;
+    border-color: #000000;
+    color: #000000;
+}
+
+
 
 .newText {
     width: 100%;
