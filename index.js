@@ -5,12 +5,12 @@ const error = document.querySelector(".error")
 
 const uid = JSON.parse(localStorage.getItem("user"))
 
-// Redirect to todolist page if logged in
+// Go to the task manager
 if (uid) {
     window.location.replace("pages/taskManager/taskManager.html")
 }
 
-// Fetch all users to find the right user by the login and password
+// Log in
 const getUsers = async () => {
     try {
         const response = await fetch("https://6575814bb2fbb8f6509d2b14.mockapi.io/task-manager/users")
@@ -22,7 +22,7 @@ const getUsers = async () => {
     }
 }
 
-// Submitting the login form
+// Submit the login form
 
 form.onsubmit = async (e) => {
     e.preventDefault()
@@ -35,7 +35,7 @@ form.onsubmit = async (e) => {
     }
 }
 
-// Remove the error message on type
+// Erase the message
 form.oninput = () => {
     error.innerHTML = ""
 }

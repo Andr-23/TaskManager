@@ -1,5 +1,3 @@
-// https://6575814bb2fbb8f6509d2b14.mockapi.io/task-manager/users
-
 const form = document.querySelector(".form")
 const emailInp = document.querySelector(".email")
 const nameInp = document.querySelector(".name")
@@ -10,13 +8,12 @@ const error = document.querySelector(".error")
 
 const uid = JSON.parse(localStorage.getItem("user"))?.id
 
-// Redirecting to todolist page if logged in
+// Go to the task manager
 if (uid) {
     window.location.replace("../pages/todoListPage.html")
 }
 
-// Registering a user
-
+// Register
 const register = async (name, email, password) => {
     try {
         const response = await fetch("https://6575814bb2fbb8f6509d2b14.mockapi.io/task-manager/users", {
@@ -36,8 +33,7 @@ const register = async (name, email, password) => {
     }
 }
 
-// Submitting the register form
-
+// Submit the register form if every field is filled correctly
 form.onsubmit = (e) => {
     e.preventDefault()
     if (passwordInp.value === passwordConfirmInp.value) {
@@ -47,7 +43,7 @@ form.onsubmit = (e) => {
     }
 }
 
-// Remove error
+// Erase the message
 form.oninput = () => {
     error.innerHTML = ""
 }
